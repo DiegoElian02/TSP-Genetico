@@ -1,8 +1,13 @@
 option optcr= 0.0001;
-set
-i/1*15/;
-alias (i,j);
 
+*/Conjunto que representa la cantidad de estados*/
+set  
+i/1*15/;
+
+*/Alias que ayuda a expresar restriccion de subtour*/
+alias (i,j); 
+
+*/Matriz de distancias*/
 table
 c(i,j)
 
@@ -26,12 +31,15 @@ c(i,j)
  ;
  
 
+*/Definicion de variables enteras*/
 variables
 z, u(i);
 
+*/Definicion de variables binaria*/
 binary Variables
 x(i,j);
 
+*/Ecuacion objetivo, restricciones para pasar a todas las ciudades, restriccion de subtour*/
 Equations
 obj, r1,r2, subtour;
 
