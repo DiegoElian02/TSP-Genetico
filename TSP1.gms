@@ -53,5 +53,5 @@ model TSP /all/;
 solve TSP using mip minimizing z;
 
 
-*/ z óptimo es 166918.81  /*
+*/ z óptimo es 166918.81 y ruta 1-11-5-13-2-7-9-16-6-4-12-10-15-3-14-8-1 /*
 
